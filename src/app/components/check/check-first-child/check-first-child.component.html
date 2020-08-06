@@ -8,11 +8,12 @@
             <img class="card-img-top" src="holder.js/100px180/" alt="">
             <div class="card-body">
                 <div class="text-white bg-danger">{{ parent_check }} {{ child_first_not_key }}</div>
-              <check-second-child [child-second] = "parent_check"></check-second-child>
+              <check-second-child [child-second] = "parent_check" (output_child)="onChange($event)"></check-second-child>
 
               <div class="form-group">
                 <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId" #abc>
                  <button type="submit" (click) = "delete(abc.value)">Submit</button>
+
               </div>
             </div>
           </div>

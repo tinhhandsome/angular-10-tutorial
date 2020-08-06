@@ -18,4 +18,8 @@ export class CheckFirstChildComponent implements OnInit {
     console.log(value)
     this.deleteRequest.emit(value)
   }
+  onChange(value: string) {
+    console.log(`child second${value}`)
+  }
+  
 }
