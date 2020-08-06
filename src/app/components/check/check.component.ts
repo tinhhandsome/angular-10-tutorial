@@ -10,5 +10,5 @@ export class CheckComponent implements OnInit {
   public parent_check: string = "parent check first"
   ngOnInit(): void {
   }
-
+  parent_not_key = 'not key'
 }

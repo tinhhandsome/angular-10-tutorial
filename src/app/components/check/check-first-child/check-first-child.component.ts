@@ -10,6 +10,7 @@ export class CheckFirstChildComponent implements OnInit {
   constructor() { }
   public parent: string = 'Parent first child @input'
   @Input('child-first') parent_check: string
+  @Input() child_first_not_key: string
   ngOnInit(): void {
   }
 
