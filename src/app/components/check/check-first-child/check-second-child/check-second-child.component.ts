@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'check-second-child',
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CheckSecondChildComponent implements OnInit {
 
   constructor() { }
-
+  @Input('child-second') parent_check: string
   ngOnInit(): void {
   }
 

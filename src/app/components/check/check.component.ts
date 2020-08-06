@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 export class CheckComponent implements OnInit {
 
   constructor() { }
-
+  public parent_check: string = "parent check first"
   ngOnInit(): void {
   }
 
