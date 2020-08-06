@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'check-first-child',
@@ -11,7 +11,11 @@ export class CheckFirstChildComponent implements OnInit {
   public parent: string = 'Parent first child @input'
   @Input('child-first') parent_check: string
   @Input() child_first_not_key: string
+  @Output() deleteRequest = new EventEmitter<string>()
   ngOnInit(): void {
   }
-
+  delete( value: string){
+    console.log(value)
+    this.deleteRequest.emit(value)
+  }
 }
