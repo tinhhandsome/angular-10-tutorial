@@ -1,17 +1,19 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { MessageService } from './../../services/message.service'
 
 @Component({
-  selector: 'app-hero',
+  selector: 'app-hero-new',
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent implements OnInit {
 
-  constructor() { }
-  @Input('abc') ngu: string
-  @Output('abc') 
+  constructor( private MessageService: MessageService) { }
 
   ngOnInit(): void {
   }
 
+  onSubmit(){
+    this.MessageService.addMessage()
+  }
 }

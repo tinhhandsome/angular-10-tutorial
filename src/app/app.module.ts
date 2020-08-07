@@ -7,7 +7,9 @@ import { TextComponent } from './components/text/text.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { CheckComponent } from './components/check/check.component';
 import { CheckFirstChildComponent } from './components/check/check-first-child/check-first-child.component';
-import { CheckSecondChildComponent } from './components/check/check-first-child/check-second-child/check-second-child.component'
+import { CheckSecondChildComponent } from './components/check/check-first-child/check-second-child/check-second-child.component';
+import { HeroDetailsComponent } from './components/hero-details/hero-details.component';
+import { MessagesComponent } from './components/messages/messages.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CheckSecondChildComponent } from './components/check/check-first-child/
     HeroComponent,
     CheckComponent,
     CheckFirstChildComponent,
-    CheckSecondChildComponent
+    CheckSecondChildComponent,
+    HeroDetailsComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
