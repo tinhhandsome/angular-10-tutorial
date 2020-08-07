@@ -1,4 +1,18 @@
-<h1>check component</h1>
-<check-first-child [child-first]="parent_check"
-[child_first_not_key]="parent_not_key" (deleteRequest) = addEvent($event)></check-first-child>
-<h2>{{output}}</h2>
+
+<div class="card">
+  <img class="card-img-top" src="holder.js/100px180/" alt="">
+  <div class="card-header">
+      <h4>Check component</h4>
+  </div>
+  <div class="card-body">
+    <h1>check component</h1>
+        <check-first-child [child-first]="parent_check"
+        [child_first_not_key]="parent_not_key" (deleteRequest) = addEvent($event)></check-first-child>
+        <h2>{{output}}</h2>
+
+        <div class="form-group">
+          <input class="form-control" placeholder="">
+         <button (click)= onHandle() type="submit" >Submit check</button>
+        </div>
+  </div>
+</div>
