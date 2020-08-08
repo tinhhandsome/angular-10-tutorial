@@ -1,0 +1,14 @@
+<div class="col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h4>text input Component Hero</h4>
+        </div>
+        <div class="card-body">
+            <div class="list-group">
+                
+               <app-hero-item [heroes]="heroes" (hero) = onDelete($event)></app-hero-item>
+                
+            </div>
+        </div>
+    </div>
+</div>

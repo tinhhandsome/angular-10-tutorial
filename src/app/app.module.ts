@@ -11,6 +11,8 @@ import { CheckFirstChildComponent } from './components/check/check-first-child/c
 import { CheckSecondChildComponent } from './components/check/check-first-child/check-second-child/check-second-child.component';
 import { HeroDetailsComponent } from './components/hero-details/hero-details.component';
 import { MessagesComponent } from './components/messages/messages.component'
+import { TestInputComponent } from './components/test_input/hero/hero.component';
+import { HeroItemComponent } from './components/test_input/hero-item/hero-item.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { MessagesComponent } from './components/messages/messages.component'
     CheckFirstChildComponent,
     CheckSecondChildComponent,
     HeroDetailsComponent,
-    MessagesComponent
+    MessagesComponent,
+    TestInputComponent,
+    HeroItemComponent
   ],
   imports: [
     BrowserModule,
